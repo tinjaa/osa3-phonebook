@@ -24,7 +24,7 @@ const person = new Person({
   number: '123-456-789'
 })
 
-person.save().then(result => {
+person.save().then(() => {
   console.log('person saved!')
   mongoose.connection.close()
 })
